@@ -1,0 +1,80 @@
+:root {
+	--container-width: 1920px;
+	--container-padding: 20px;
+
+	--font-main: 'DrukWideCyr-Bold';
+	--font-accent: 'Commissioner-Regular';
+	--font-accentBold: 'Commissioner-Bold';
+
+	--page-bg: #ECECEC;
+	--bg-color: #EFEFEF;
+	--bg-colorWhite: #fff;
+	--textBlack-color: #202020;
+	--textWhite-color: #fff;
+	--tagsBg: #202020;
+	--orangeColor: #F36722;
+	--greenColor: #2E8D43;
+
+    --laptop-size: 1919px;
+	--mobile-size: 320px;
+
+	--descH1fsz: 80px;
+	--descLhH1: 120%;
+
+	--descH2fsz: 64px;
+	--descLhH2: 120%;
+
+	--descH3fsz: 48px;
+	--descLhH3: 120%;
+
+	--descH4fsz: 32px;
+	--descLhH4: 130%;
+
+	--descH5fsz: 26px;
+	--descLhH5: 130%;
+
+	--descH6fsz: 20px;
+	--descLhH6: 130%;
+
+	--descH7fsz: 16px;
+	--descLhH7: 140%;
+
+	--descBtn: 14px;
+	--descLhBtn: 140%;
+
+	--descTags: 12px;
+	--descLhTags: 140%;
+
+	--descText1: 16px;
+	--descLhText1: 160%;
+
+	--descText2: 12px;
+	--descLhText2: 160%;
+
+	@media (max-width: 710px) {
+		--descH1fsz: 64px;
+		--descLhH1: 120%;
+	}
+
+	@media (max-width: 665px) {
+		--descH1fsz: 26px;
+		--descLhH1: 120%;
+		--descH2fsz: 20px;
+		--descLhH2: 130%;
+		--descH3fsz: 16px;
+		--descLhH3: 140%;
+		--descH4fsz: 14px;
+		--descLhH4: 140%;
+		--descH5fsz: 12px;
+		--descLhH5: 140%;
+		--descTags: 10px;
+		--descLhTags: 140%;
+		--descText1: 16px;
+		--descLhText1: 140%;
+		--descText2: 14px;
+		--descLhText2: 140%;
+        }
+
+
+}
+

@@ -1,0 +1,35 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+@font-face {
+    font-family: 'Commissioner-Bold';
+    src: url(../../fonts/Commissioner/Commissioner-Bold.woff2) format(woff2),
+         url(../../fonts/Commissioner/Commissioner-Bold.woff) format(woff),;
+         font-weight: normal;
+         font-style: normal;
+}
+
+@font-face {
+    font-family: 'Commissioner-Regular';
+    src: url(../../fonts/Commissioner/Commissioner-Regular.woff2) format(woff2),
+         url(../../fonts/Commissioner/Commissioner-Regular.woff) format(woff);
+         font-weight: normal;
+         font-style: normal;
+}
+@font-face {
+    font-family: 'DrukWideCyr-Bold';
+    src: url(../../fonts/Druk/DrukWideCyr-Bold.woff2) format(woff2),
+         url(../../fonts/Druk/DrukWideCyr-Bold.woff) format(woff);
+         font-weight: normal;
+         font-style: normal;
+}
+
+/* Base */
+@import "./base/reset";
+@import "./base/vars";
+@import "./base/base";
+@import "./base/utils";
+@import "./base/containers";
+@import "./base/sticky-footer";
+
+/* Blocks */
+@import "./blocks/*.scss";
