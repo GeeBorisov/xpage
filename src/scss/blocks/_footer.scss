@@ -1,0 +1,111 @@
+.footer {
+    padding-top: 120px;
+    padding-bottom: 38px;
+    position: relative;
+    overflow: hidden;
+    @media (max-width: 900px) {
+        padding-top: 42px;
+      }
+    &::before {
+        position: absolute;
+        right: -16%;
+        bottom: -57%;
+        content: url(../img/footer/boll.png);
+        width: 991px;
+        height: 988px;
+        z-index: 3;
+        @media (max-width: 1135px) {
+            right: -36%;
+            bottom: -65%;
+          }
+        @media (max-width: 900px) {
+            right: -70%;
+          }
+        @media (max-width: 680px) {
+        content: url(../img/footer/smoll-boll.png);
+        right: -140%;
+        bottom: -90%;
+          }
+        @media (max-width: 570px) {
+        right: -160%;
+        bottom: -130%;
+          }
+        @media (max-width: 460px) {
+        right: -195%;
+          }
+        @media (max-width: 380px) {
+        right: -250%;
+          }
+        @media (max-width: 320px) {
+        right: -259%;
+        bottom: -129%;
+          }
+    }
+}
+.footer__wrapper {
+    height: 655px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    @media (max-width: 570px) {
+        height: 464px;
+          }
+}
+.footer__content {
+    border-top: 1px solid #202020;
+    padding-top: 35px;
+    display: flex;
+    column-gap: 121px;
+    @media (max-width: 900px) {
+        padding-top: 20px;
+      }
+
+}
+.footer__content-right {
+    padding-top: 29px;
+    img {
+        position: relative;
+        z-index: 4;
+    }
+    @media (max-width: 1035px) {
+        display: none;
+      }
+}
+.footer__title {
+    position: relative;
+    font-size: var(--descH3fsz);
+    line-height: var(--descLhH3);
+    max-width: 1138px;
+    text-transform: uppercase;
+    z-index: 3;
+    @media (max-width: 900px) {
+        font-size: var(--descH4fsz);
+        line-height: var(--descLhH4);
+      }
+    @media (max-width: 665px) {
+        font-size: var(--descH2fsz);
+        line-height: var(--descLhH2);
+      }
+}
+.footer__apps {
+    display: flex;
+    padding-top: 32px;
+    column-gap: 37px;
+    @media (max-width: 570px) {
+        padding-top: 20px;
+        flex-direction: column;
+        row-gap: 24px;
+          }
+    &-apple {
+        width: 134px;
+        height: 32px;
+    }
+    &-google {
+        width: 118px;
+        height: 32px;
+    }
+}
+.footer__bottom {
+    font-size: var(--descText2);
+    line-height: var(--descLhText2);
+}

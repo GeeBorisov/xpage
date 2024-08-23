@@ -1,0 +1,112 @@
+.header {
+	padding-top: 8px;
+  
+	&__content {
+	  background-image: url(../../img/header/header-bg-play.webp);
+	  background-size: cover;
+	  background-repeat: no-repeat;
+	  background-position: center;
+	  min-height: 830px;
+	  border-radius: 20px;
+	  display: flex;
+	  flex-direction: column;
+	  justify-content: flex-end;
+	  padding: 0 20px 20px 20px;
+	  transition: background-image 0.4s ease;
+	  @media (max-width: 665px) {
+		min-height: 516px;
+	  }
+	  @media (max-width: 320px) {
+		background-image: url(../../img/header/header-bg-playMob.webp);
+		padding: 0 12px 12px 12px;
+	  }
+	}
+  
+	&__title {
+	  color: var(--textWhite-color);
+	  font-size: var(--descH1fsz);
+	  line-height: var(--descLhH1);
+	  max-width: 1273px;
+	  padding-bottom: 48px;
+	  text-transform: uppercase;
+	  transition: color 0.4s ease, opacity 0.3s ease;
+	  opacity: 0;
+	  pointer-events: none;
+	  &.is-hidden {
+		display: none;
+	  }
+  
+	  &--play,
+	  &--learn,
+	  &--watch {
+		opacity: 1;
+		pointer-events: auto;
+	  }
+	  @media (max-width: 665px) {
+		padding-bottom: 12px;
+		width: 271px;
+	  }
+	}
+  
+	&__btns {
+	  display: flex;
+	  column-gap: 8px;
+	  @media (max-width: 665px) {
+		flex-direction: column;
+		row-gap: 4px;
+	}
+	}
+  
+	&__btn {
+	  display: flex;
+	  justify-content: space-between;
+	  width: 608px;
+	  padding: 20px 24px;
+	  background-color: var(--bg-colorWhite);
+	  border-radius: 20px;
+	  color: var(--textBlack-color);
+	  font-size: var(--descH7fsz);
+	  line-height: var(--descLhH7);
+	  transition: all 0.4s ease;
+	  text-transform: uppercase;  
+	  svg {
+		width: 24px;
+		height: 24px;
+		@media (max-width: 665px) {
+			width: 16px;
+			height: 16px;
+		}
+	  }
+	  &:hover {
+		background-color: var(--orangeColor);
+		color: var(--textWhite-color);
+	  }
+  
+	  &.is-active {
+		background-color: var(--orangeColor);
+		color: var(--textWhite-color);
+	  }
+	  @media (max-width: 665px) {
+		font-size: var(--descH4fsz);
+		line-height: var(--descLhH4);
+		padding: 10px 14px;
+		width: 100%;
+    }
+	}
+  }
+
+.desctop {
+	display: block;
+	@media (max-width: 320px) {
+		display: none;
+
+	  }
+
+  }
+.mobile {
+display: none;
+@media (max-width: 320px) {
+	display: block;
+
+}
+}
